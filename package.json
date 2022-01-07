@@ -1,0 +1,14 @@
+{
+  "name": "gang001",
+  "version": "0.0.1",
+  "description": "gang gang hao",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "gang"
+  ],
+  "author": "gang",
+  "license": "ISC"
+}
