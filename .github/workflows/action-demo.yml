@@ -5,4 +5,4 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo " ${{ secrets.OSS_ID }} event."
+      - run: echo " ${{ secrets.OSS_ID }} event.${{ vars.HUAN_VAR }}"
