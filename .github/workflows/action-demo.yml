@@ -4,5 +4,8 @@ on: [push]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
+    env:
+      OSS_ID: ${{ secrets.OSS_ID }}
     steps:
       - run: echo " ${{ secrets.OSS_ID }} event.${{ vars.HUAN_VAR }}"
+      - run: npm run start
