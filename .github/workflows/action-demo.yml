@@ -10,6 +10,7 @@ jobs:
         node-version: [10.x]
     env:
       OSS_ID: ${{ secrets.OSS_ID }}
+      HUAN_VAR: ${{ vars.HUAN_VAR }}
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}

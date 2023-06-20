@@ -1,3 +1,4 @@
 const { env } = process;
 const b = env.OSS_ID.length;
-console.log("1-gangg" + b, env);
+const { HUAN_VAR } = env;
+console.log("1-gangg" + b, HUAN_VAR);
