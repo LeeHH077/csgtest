@@ -3,6 +3,7 @@ run-name: act-demo-runing
 on: [push]
 jobs:
   job1:
+    environment: GANG-EVN
     runs-on: macos-latest
     strategy:
       matrix:
