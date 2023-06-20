@@ -1,11 +1,12 @@
-name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+name: act-demo
+run-name: act-demo-runing
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
+  job1:
     runs-on: ubuntu-latest
     env:
       OSS_ID: ${{ secrets.OSS_ID }}
     steps:
-      - run: echo " ${{ secrets.OSS_ID }} event.${{ vars.HUAN_VAR }}"
+      - run: echo "${{ secrets.OSS_ID }} = ${{ vars.HUAN_VAR }}"
+      - run: npm install
       - run: npm run start
